@@ -15,7 +15,7 @@ public class Main{
             queue.add(newText.charAt(i));
         }
         for (int i=0;i<index;i++){
-            if(!queue.poll().equals(stack.get(index-i-1))){
+            if(!queue.remove().equals(stack.pop())){
                 result=false;
                 break;
             }
